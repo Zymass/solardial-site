@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SolarDial</title>
+<style>
+  :root {
+    --canvas: #FFF7ED;
+    --surface: #FFFFFF;
+    --text: #1C1407;
+    --text-secondary: #7C6A53;
+    --accent: #EA580C;
+    --gold: #F59E0B;
+    --dusk: #3730A3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --canvas: #12100B;
+      --surface: #1E1A12;
+      --text: #FBF3E6;
+      --text-secondary: #C4B59C;
+      --accent: #FB923C;
+      --gold: #FBBF24;
+      --dusk: #818CF8;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+    background: var(--canvas);
+    color: var(--text);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 64px 24px; }
+  h1 {
+    font-size: 40px; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 24px;
+    background: linear-gradient(90deg, var(--accent), var(--gold));
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  h2 { font-size: 22px; font-weight: 600; margin: 40px 0 12px; }
+  p, li { font-size: 17px; color: var(--text); }
+  .muted { color: var(--text-secondary); }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  nav { display: flex; gap: 16px; margin-top: 16px; flex-wrap: wrap; }
+  nav a { padding: 10px 16px; background: var(--surface); border-radius: 10px; font-weight: 500; }
+  .hero { padding: 80px 0 24px; }
+  .tagline { font-size: 22px; color: var(--text-secondary); margin: 0 0 32px; }
+  footer { margin-top: 80px; font-size: 13px; color: var(--text-secondary); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <section class="hero">
+    <h1>SolarDial</h1>
+    <p class="tagline">An on-device sun almanac: sunrise, sunset, golden hour and sun position for any place you save — computed locally, with zero network.</p>
+    <nav>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </section>
+
+  <section>
+    <h2>What it is</h2>
+    <p>
+      Pick any place on Earth — or use your current location — and SolarDial tells you exactly when
+      the sun rises and sets, when solar noon falls, and when the golden and blue hours begin and end.
+      Every number is computed on your iPhone using the standard NOAA solar equations. No network, no account.
+    </p>
+    <h2>Features</h2>
+    <p>
+      A live countdown to the next sun event, a scrubbable sun-position dial with altitude and azimuth,
+      a shadow-length calculator for any object height, saved places you can add by name or coordinates,
+      and a daylight-trend chart showing how the day grows or shrinks week by week.
+    </p>
+    <h2>Private by design</h2>
+    <p>
+      Zero data leaves your device. No account, no cloud, no analytics, no third-party SDKs.
+      Location is optional and read only on your device to compute sun times — the app works fully
+      from a place you type in by hand.
+    </p>
+    <h2>Everywhere you look</h2>
+    <p>
+      A Home Screen widget with today's sunrise and sunset, a Live Activity counting down to the next
+      golden hour, and a standalone Apple Watch app for sun times on your wrist.
+    </p>
+  </section>
+
+  <footer>
+    © 2026 Ilia Filiaev. SolarDial is a weather and utility tool.
+  </footer>
+</div>
+</body>
+</html>
